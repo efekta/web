@@ -207,10 +207,8 @@ body.overflow {
   position: relative;
   height: 100vh;
   min-height: 700px;
-  background-image: url("../../img/head.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background: url("../img/head.png") no-repeat center;
 }
 
 .main-header .main-container {
