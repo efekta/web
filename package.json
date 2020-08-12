@@ -10,9 +10,11 @@
     "author": "Lily",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@babel/preset-env": "^7.8.4",
         "browser-sync": "^2.26.7",
-        "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^6.1.0",
+        "gulp": "4.0",
+        "gulp-autoprefixer": "^7.0.1",
         "gulp-cheerio": "^0.6.3",
         "gulp-concat": "^2.6.1",
         "gulp-csso": "^3.0.1",
@@ -28,5 +30,11 @@
     },
     "dependencies": {
         "gulp-rename": "^1.4.0"
-    }
+    },
+    "browserslist": [
+        "last 3 version",
+        "> 1%",
+        "maintained node versions",
+        "not dead"
+    ]
 }
