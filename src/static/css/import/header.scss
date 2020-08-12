@@ -53,6 +53,9 @@
   opacity: 1;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
+  @media(max-width: 768px) {
+    width: 100%;
+  }
 }
 .nav-list__link {
   color: #fff;
@@ -78,6 +81,12 @@
   font-weight: 900;
   &__small {
     font-weight: 400;
+  }
+  @media(max-width: 768px) {
+    font-size: 26px;
+  }
+  @media(max-width: 767px) {
+    font-size: 20px;
   }
 }
 .menu-toggle {
@@ -114,4 +123,42 @@
 }
 .menu-toggle.on .three {
   transform: rotate(-45deg) translate(14px, -15px);
+}
+.socials-list-wrapp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  &:before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 45%;
+    width: 1px;
+    background: #fff;
+  }
+  &:after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 45%;
+    width: 1px;
+    background: #fff;
+  }
+}
+.socials-list {
+  &__item {
+    margin: 40px 0;
+  }
+  &__link {
+    color: #fff;
+    font-size: 22px;
+    &-telegram:hover {
+      color: blue;
+    }
+    &-whatsapp:hover {
+      color: forestgreen;
+    }
+  }
 }
