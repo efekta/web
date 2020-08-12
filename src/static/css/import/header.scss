@@ -1,0 +1,119 @@
+.main-header {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background-image: url("../../img/Главная.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .main-container {
+    height: 100%;
+  }
+}
+.header {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-link {
+  padding: 40px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+  }
+}
+.nav-list {
+  display: flex;
+  padding: 40px 0;
+  &__item {
+    margin-left: 30px;
+    @media(max-width: 992px) {
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+  }
+  @media(max-width: 992px) {
+    position: fixed;
+    right: -100%;
+    opacity: 0;
+    transition: ease-out .2s;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    justify-content: center;
+  }
+}
+.nav-list.show {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+.nav-list__link {
+  color: #fff;
+  font-size: 16px;
+  &-tel {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &:hover {
+    color: #6c6c6c;
+  }
+}
+.header-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 40px 0;
+}
+.title-head {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 900;
+  &__small {
+    font-weight: 400;
+  }
+}
+.menu-toggle {
+  display: none;
+  width: 26px;
+  height: 23px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  cursor: pointer;
+  z-index: 3;
+  @media(max-width: 992px) {
+    display: block;
+  }
+}
+.menu-toggle .one, .menu-toggle .three, .menu-toggle .two {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  margin: 4px auto;
+  backface-visibility: hidden;
+  transition-duration: .3s;
+  display: block;
+}
+.menu-toggle.on .one {
+  transform: rotate(45deg) translate(0, 1px);
+}
+
+.menu-toggle.on .one, .menu-toggle.on .three {
+  margin: 8px auto;
+}
+.menu-toggle.on .two {
+  opacity: 0;
+}
+.menu-toggle.on .three {
+  transform: rotate(-45deg) translate(14px, -15px);
+}

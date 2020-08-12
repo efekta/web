@@ -1,0 +1,13 @@
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  &.overflow {
+    overflow: hidden;
+  }
+}
+.main-container {
+  max-width: 1800px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
