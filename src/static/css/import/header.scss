@@ -7,6 +7,9 @@
   .main-container {
     height: 100%;
   }
+  @media(max-height: 700px) {
+    min-height: 100%;
+  }
 }
 .header {
   position: relative;

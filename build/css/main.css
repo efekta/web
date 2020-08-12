@@ -215,6 +215,12 @@ body.overflow {
   height: 100%;
 }
 
+@media (max-height: 700px) {
+  .main-header {
+    min-height: 100%;
+  }
+}
+
 .header {
   position: relative;
   height: 100%;
