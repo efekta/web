@@ -190,6 +190,7 @@ select:focus {
 body {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
+  color: #0c0c0c;
 }
 
 body.overflow {
@@ -200,7 +201,13 @@ body.overflow {
   max-width: 1800px;
   width: auto;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
+}
+
+@media (max-width: 1800px) {
+  .main-container {
+    max-width: 100%;
+  }
 }
 
 .desc-index {
@@ -615,6 +622,61 @@ body.overflow {
 
 .direction-activity-link:hover .direction-activity-content {
   top: 0;
+}
+
+.about {
+  padding: 60px 0;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 19px;
+  }
+}
+
+.about__content {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1024px) {
+  .about__content {
+    margin-bottom: 20px;
+  }
+}
+
+.about__content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 382px;
+  height: 61px;
+  border: 2px solid #161dbe;
+  background-color: #161dbe;
+  color: #fff;
+  text-align: center;
+}
+
+.about__btn:hover {
+  background-color: #fff;
+  color: inherit;
+}
+
+@media (max-width: 420px) {
+  .about__btn {
+    width: 100%;
+  }
 }
 
 .footer {

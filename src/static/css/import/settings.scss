@@ -1,6 +1,7 @@
 body {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
+  color: #0c0c0c;
   &.overflow {
     overflow: hidden;
   }
@@ -9,8 +10,12 @@ body {
   max-width: 1800px;
   width: auto;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
+  @media(max-width: 1800px) {
+    max-width: 100%;
+  }
 }
+
 .desc-index {
   padding: 40px 0;
   color: #14222b;

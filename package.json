@@ -32,9 +32,9 @@
         "gulp-rename": "^1.4.0"
     },
     "browserslist": [
-        "last 3 version",
-        "> 1%",
-        "maintained node versions",
-        "not dead"
+        "defaults",
+        "not IE 11",
+        "not IE_Mob 11",
+        "maintained node versions"
     ]
 }
