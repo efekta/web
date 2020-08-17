@@ -895,6 +895,13 @@ body.overflow {
   transition: all 0.2s;
 }
 
+.special-offer-sup {
+  color: #14222b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
 .special-offer-btn {
   width: 100%;
   background: #161dbe;
