@@ -678,6 +678,12 @@ body.overflow {
   }
 }
 
+.section-questions {
+  height: 500px;
+  background: url("../../img/block8.png") no-repeat center center;
+  background-size: cover;
+}
+
 .section-advantages {
   padding: 65px 0;
 }
