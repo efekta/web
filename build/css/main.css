@@ -780,6 +780,51 @@ body.overflow {
   height: 52px;
 }
 
+.section-special-offer {
+  padding: 65px 0;
+}
+
+.special-offer-content {
+  position: relative;
+}
+
+.special-offer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 2;
+}
+
+.special-offer-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.special-offer-box__sum {
+  color: #161dbe;
+  font-size: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.special-offer-box__text {
+  color: #161dbe;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .footer {
   min-height: 203px;
   background-color: #161dbe;
