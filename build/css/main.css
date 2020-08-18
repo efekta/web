@@ -1058,6 +1058,33 @@ body.overflow {
   transition: all .3s ease-in-out;
 }
 
+.desc-coworking-wrapper {
+  padding: 60px 0;
+  background: #161dbe;
+  color: #fff;
+}
+
+.desc-coworking-wrapper .desc-coworking {
+  width: 750px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .desc-coworking-wrapper .desc-coworking {
+    width: 100%;
+  }
+}
+
+.desc-coworking-wrapper .desc-coworking p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.coworking-page .special-offer-form {
+  margin-top: 350px;
+}
+
 .footer {
   min-height: 203px;
   background-color: #161dbe;
