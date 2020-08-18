@@ -1081,6 +1081,48 @@ body.overflow {
   font-weight: 400;
 }
 
+.section-coworking-about {
+  padding: 60px 0;
+}
+
+.coworking-about {
+  position: relative;
+}
+
+.coworking-about:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #161dbe;
+}
+
+.coworking-about-title-wrapp {
+  margin-bottom: 60px;
+}
+
+.coworking-about-title {
+  color: #14222b;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.coworking-about-subtitle {
+  color: #161dbe;
+  font-weight: 700;
+}
+
+.coworking-about-desc {
+  width: 1000px;
+  margin: auto;
+  color: #14222b;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .coworking-page .special-offer-form {
   margin-top: 350px;
 }
