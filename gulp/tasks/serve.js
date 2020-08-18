@@ -3,8 +3,8 @@ module.exports = function() {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "index.html"
+                index: "coworking-page.html"
             }
         });
     });
-}
+};

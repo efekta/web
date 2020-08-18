@@ -254,6 +254,7 @@ body.overflow {
 
 .nav-list {
   display: flex;
+  align-items: center;
   padding: 40px 0;
 }
 
@@ -300,6 +301,7 @@ body.overflow {
 .nav-list__link {
   color: #fff;
   font-size: 16px;
+  padding-bottom: 5px;
 }
 
 .nav-list__link-tel {
@@ -308,7 +310,8 @@ body.overflow {
 }
 
 .nav-list__link:hover {
-  color: #6c6c6c;
+  color: #fff;
+  border-bottom: 1px solid #161dbe;
 }
 
 .header-content {
