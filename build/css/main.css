@@ -887,8 +887,30 @@ body.overflow {
   padding: 65px 0;
 }
 
+.special-offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-offer__item {
+  width: 49%;
+}
+
+@media (max-width: 1024px) {
+  .special-offer {
+    flex-wrap: wrap;
+  }
+  .special-offer__item {
+    width: 100%;
+  }
+}
+
 .special-offer-content {
   position: relative;
+}
+
+.special-offer-content img {
+  width: 100%;
 }
 
 .special-offer-box {
@@ -1151,6 +1173,7 @@ body.overflow {
 .coworking-about-subtitle {
   color: #161dbe;
   font-weight: 700;
+  margin-left: 5px;
 }
 
 .coworking-about-desc {
@@ -1216,6 +1239,84 @@ body.overflow {
 
 .coworking-page .special-offer-form {
   margin-top: 350px;
+}
+
+.section-resolution {
+  padding: 60px 0;
+}
+
+@media (max-width: 1024px) {
+  .section-resolution {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .resolution {
+    flex-wrap: wrap;
+  }
+  .resolution .col-md-4 {
+    max-width: 100%;
+    flex: 100%;
+  }
+}
+
+.resolution-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #14222b;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .resolution-title {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+.resolution__item {
+  height: 472px;
+  background-color: #e5e6eb;
+  padding: 50px 50px 50px 50px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .resolution__item {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.resolution__item-two {
+  height: 411px;
+}
+
+.resolution__item-three {
+  height: 545px;
+}
+
+.resolution-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.resolution-content__title {
+  color: #161dbe;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.resolution-content__desc {
+  color: #161dbe;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .footer {
