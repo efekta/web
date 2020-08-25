@@ -1523,6 +1523,112 @@ body.overflow {
   margin-left: 7px;
 }
 
+.coworking-price {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.coworking-price__item {
+  width: 32%;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .coworking-price__item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 767px) {
+  .coworking-price__item {
+    width: 100%;
+  }
+}
+
+.price-content__title {
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .price-content__title {
+    font-size: 25px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .price-content__title {
+    font-size: 20px;
+  }
+  .price-content__title p {
+    display: inline-block;
+  }
+}
+
+.price-content__title-title {
+  font-weight: 700;
+}
+
+.price-content__title-desc {
+  font-weight: 400;
+}
+
+.price-content__desc {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .price-content__desc {
+    font-size: 14px;
+  }
+}
+
+.price-content__num {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2.4px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .price-content__num {
+    font-weight: 18px;
+  }
+}
+
+.price-content__btn {
+  max-width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all .3s ease-in-out;
+}
+
+.price-content__btn:hover {
+  border-color: #161dbe;
+  color: #fff;
+}
+
 .footer {
   min-height: 203px;
   background-color: #161dbe;
