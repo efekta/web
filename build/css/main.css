@@ -1525,12 +1525,15 @@ body.overflow {
 
 .coworking-price {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .coworking-price__item {
-  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
   padding: 15px;
   margin-bottom: 25px;
 }
