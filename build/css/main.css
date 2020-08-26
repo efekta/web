@@ -1956,9 +1956,10 @@ body.overflow {
 
 .section-coworking-box {
   position: relative;
-  height: 530px;
+  min-height: 530px;
   background-size: cover;
-  background: url("../img/box10.png") no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .section-coworking-box .main-container {
@@ -1974,7 +1975,13 @@ body.overflow {
 
 @media (max-width: 1024px) {
   .coworking-box {
-    padding: 30px 0;
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .coworking-box {
+    width: 100%;
   }
 }
 
