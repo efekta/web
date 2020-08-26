@@ -8,6 +8,16 @@
     height: 100%;
   }
 }
+.main-header-coworking {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background-size: cover;
+  background: url("../img/head2.png") no-repeat center;
+  .main-container {
+    height: 100%;
+  }
+}
 .header {
   position: relative;
   height: 100%;
