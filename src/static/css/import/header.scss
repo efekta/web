@@ -18,11 +18,49 @@
     height: 100%;
   }
 }
+.main-header-coaching {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background-size: cover;
+  background: url("../img/head3.png") no-repeat center;
+  .main-container {
+    height: 100%;
+  }
+  .title-head {
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 30px;
+    @media(max-width: 1024px) {
+      font-size: 38px;
+    }
+  }
+  .title-desc {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 35px;
+    @media(max-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+  .title-desc-big {
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 40px;
+    @media(max-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}
 .header {
   position: relative;
   height: 100%;
   display: flex;
   justify-content: space-between;
+  &-content {
+    text-align: right;
+  }
 }
 .logo-link {
   position: absolute;
@@ -185,5 +223,25 @@
     &-whatsapp:hover {
       color: forestgreen;
     }
+  }
+}
+.coaching-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 315px;
+  position: relative;
+  padding: 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #161dbe;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    border-color: #fff;
+    color: #fff;
   }
 }
