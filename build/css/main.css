@@ -2467,6 +2467,95 @@ h3.offer-clients__title {
   }
 }
 
+.section-coaching-statistic {
+  position: relative;
+  height: 100vh;
+}
+
+.section-coaching-statistic .main-container {
+  position: relative;
+  height: 100%;
+}
+
+.coaching-statistic-pic {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .coaching-statistic-pic {
+    right: 0;
+  }
+}
+
+.coaching-statistic {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.coaching-statistic__item {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coaching-statistic__item-blue {
+  background: #161dbe;
+  color: #fff;
+}
+
+.coaching-statistic__item-gray {
+  background: #e5e6eb;
+  color: #161dbe;
+}
+
+.coaching-statistic__item-white {
+  background: #fff;
+  color: #161dbe;
+}
+
+.coaching-statistic__num {
+  font-size: 100px;
+  font-weight: 900;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 1024px) {
+  .coaching-statistic__num {
+    font-size: 68px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .coaching-statistic__num {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+}
+
+.coaching-statistic__desc {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.coaching-statistic__item.coaching-statistic__item-blue .coaching-statistic__desc {
+  color: #fff;
+}
+
+.coaching-statistic__item.coaching-statistic__item-white .coaching-statistic__desc,
+.coaching-statistic__item.coaching-statistic__item-gray .coaching-statistic__desc {
+  color: #0c0c0c;
+}
+
 .footer {
   min-height: 203px;
   background-color: #161dbe;
