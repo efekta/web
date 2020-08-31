@@ -14,4 +14,17 @@ $(document).ready(function(){
         // $('.nav').removeClass("nav_hide");
         $('body').removeClass('overflow');
     });
+
+    /**/
+    $('#company-link_1').on('click', function() {
+        $('#company_1').toggleClass('open')
+    });
+    /**/
+    $('#company-link_2').on('click', function() {
+        $('#company_2').toggleClass('open')
+    });
+    /**/
+    $('#company-link_3').on('click', function() {
+        $('#company_3').toggleClass('open')
+    });
 });
