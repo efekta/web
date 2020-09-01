@@ -2590,7 +2590,6 @@ h3.offer-clients__title {
 
 .coaching-for-whom {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -2643,6 +2642,48 @@ h3.offer-clients__title {
   width: 60px;
   height: 1px;
   background: #161dbe;
+}
+
+.section-coaching-result {
+  position: relative;
+  min-height: 560px;
+}
+
+.section-coaching-result-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  background: #161dbe;
+  z-index: -1;
+  padding: 15px;
+}
+
+.section-coaching-result-bg:before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: -300px;
+  width: 400px;
+  height: 400px;
+  background: url("../img/coaching_3.png") no-repeat center;
+}
+
+.coaching-result-title {
+  width: 40%;
+  text-align: right;
+  padding-top: 15px;
+  padding-right: 10px;
+  font-weight: 900;
+  font-size: 36px;
+  color: #161dbe;
+}
+
+.coaching-result-subtitle {
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
 }
 
 .footer {
