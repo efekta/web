@@ -27,12 +27,26 @@
   .main-container {
     height: 100%;
   }
+  .header-content {
+    @media(max-width: 1024px) {
+      text-align: right;
+      width: calc(100% - 95px);
+      margin-left: auto;
+    }
+  }
   .title-head {
     font-size: 80px;
     text-align: left;
     margin-bottom: 30px;
     @media(max-width: 1024px) {
-      font-size: 38px;
+      font-size: 36px;
+      text-align: right;
+    }
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
     }
   }
   .title-desc {
@@ -41,6 +55,10 @@
     margin-bottom: 35px;
     @media(max-width: 1024px) {
       font-size: 18px;
+      text-align: right;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
     }
   }
   .title-desc-big {
@@ -50,6 +68,10 @@
     margin-bottom: 40px;
     @media(max-width: 1024px) {
       font-size: 20px;
+      text-align: right;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
     }
   }
 }
@@ -134,8 +156,14 @@
   font-size: 70px;
   font-weight: 900;
   margin-bottom: 10px;
-  &__small {
+  @media(max-width: 767px) {
+    margin-bottom: 0;
+  }
+    &__small {
     font-weight: 400;
+    @media(max-width: 767px) {
+      display: block;
+    }
   }
   @media(max-width: 1024px) {
     font-size: 36px;
@@ -243,5 +271,11 @@
   &:hover {
     border-color: #fff;
     color: #fff;
+  }
+  @media (max-width: 1024px) {
+    margin-left: auto;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }
