@@ -2534,7 +2534,6 @@ h3.offer-clients__title {
 
 @media (max-width: 1024px) {
   .section-coaching-statistic {
-    height: auto;
     margin: 30px 0;
   }
 }
@@ -2555,6 +2554,8 @@ h3.offer-clients__title {
 @media (max-width: 768px) {
   .coaching-statistic-pic {
     right: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -2612,6 +2613,18 @@ h3.offer-clients__title {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .coaching-statistic__desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .coaching-statistic__desc {
+    font-size: 14px;
+  }
 }
 
 .coaching-statistic__item.coaching-statistic__item-blue .coaching-statistic__desc {
