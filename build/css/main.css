@@ -3313,6 +3313,112 @@ h3.offer-clients__title {
   }
 }
 
+.section-coaching-questions {
+  padding: 60px 0;
+  background: url("../img/coaching-footer-bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+.questions-box-top-wrapp {
+  min-height: 50vh;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.questions-box-top {
+  color: #fff;
+  font-size: 30px;
+  padding: 40px 0;
+}
+
+@media (max-width: 1024px) {
+  .questions-box-top {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .questions-box-top {
+    font-size: 16px;
+  }
+}
+
+.coaching-questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  min-height: 50vh;
+}
+
+@media (max-width: 767px) {
+  .coaching-questions {
+    flex-wrap: wrap;
+  }
+}
+
+.coaching-questions-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .coaching-questions-content {
+    flex-wrap: wrap;
+  }
+}
+
+.coaching-questions__item {
+  width: 50%;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .coaching-questions__item {
+    width: 100%;
+  }
+}
+
+.coaching-questions-btn {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-width: 279px;
+  padding: 15px;
+  background: #161dbe;
+  overflow: hidden;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all .3s ease-in-out;
+}
+
+.coaching-questions-btn:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+}
+
+.coaching-questions-btn:hover {
+  color: #fff;
+  background: #161dbe;
+}
+
+.coaching-questions-btn:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .footer {
   min-height: 203px;
   background-color: #161dbe;
