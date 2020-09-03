@@ -604,7 +604,8 @@ body.overflow {
   display: flex;
   width: 32.5%;
   cursor: pointer;
-  margin: 45px 0;
+  overflow: hidden;
+  padding: 45px 0;
 }
 
 @media (max-width: 921px) {
@@ -650,7 +651,7 @@ body.overflow {
 
 .company-title {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 28px;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -692,7 +693,6 @@ body.overflow {
 .company-show-title {
   color: #ffffff;
   font-size: 23px;
-  line-height: 21px;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 25px;
@@ -740,6 +740,7 @@ body.overflow {
   background: #161dbe;
   border: 1px solid transparent;
   transition: all .3s ease-in-out;
+  text-transform: uppercase;
 }
 
 @media (max-width: 960px) and (min-width: 768px) {
@@ -2776,6 +2777,8 @@ h3.offer-clients__title {
     width: 300px;
     height: 300px;
     left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -2846,6 +2849,7 @@ h3.offer-clients__title {
 @media (max-width: 1024px) {
   .coaching-result-subtitle-mob {
     display: inline-block;
+    font-size: 22px;
   }
 }
 
@@ -2934,6 +2938,218 @@ h3.offer-clients__title {
   .coaching-result__item:before {
     width: 40px;
   }
+}
+
+.section-coaching-tariffs {
+  padding: 60px 0;
+}
+
+@media (max-width: 1024px) {
+  .section-coaching-tariffs {
+    padding: 30px 0;
+  }
+}
+
+.coaching-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 921px) {
+  .coaching-company {
+    flex-wrap: wrap;
+  }
+}
+
+.coaching-company-item {
+  position: relative;
+  display: flex;
+  width: 32.5%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 45px 0;
+}
+
+@media (max-width: 921px) {
+  .coaching-company-item {
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+    margin: 10px;
+  }
+}
+
+.coaching-company-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@media (max-width: 921px) {
+  .coaching-company-link img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    margin: 0 auto;
+  }
+}
+
+.coaching-company-box-show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 45px 20px;
+}
+
+.coaching-company-title {
+  color: #ffffff;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .coaching-company-title {
+    font-size: 22px;
+  }
+}
+
+.coaching-company-subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .coaching-company-subtitle {
+    font-size: 18px;
+  }
+}
+
+.coaching-company-desc {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .coaching-company-desc {
+    font-size: 18px;
+  }
+}
+
+.coaching-company-show-title {
+  color: #ffffff;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .coaching-company-show-title {
+    font-size: 16px;
+  }
+}
+
+.coaching-company-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: calc(100% + 90px);
+  width: 100%;
+  transition: all .5s;
+  padding: 0 30px;
+  background: #161dbe;
+  opacity: 0;
+}
+
+@media (max-width: 921px) {
+  .coaching-company-content {
+    height: 400px;
+    overflow-y: scroll;
+  }
+}
+
+.coaching-company-content__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  position: relative;
+  padding: 20px 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  background: #161dbe;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 960px) and (min-width: 768px) {
+  .coaching-company-content__link {
+    max-width: 180px;
+  }
+}
+
+.coaching-company-content__link:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.coaching-company-content.open {
+  top: -45px;
+  opacity: 1;
+}
+
+@media (max-width: 921px) {
+  .coaching-company-content.open {
+    top: 0;
+  }
+}
+
+.coaching-company-content__link-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  position: relative;
+  padding: 20px 15px;
+  color: #161dbe;
+  font-size: 12px;
+  font-weight: 700;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 960px) and (min-width: 768px) {
+  .coaching-company-content__link-white {
+    max-width: 180px;
+  }
+}
+
+.coaching-company-content__link-white:hover {
+  background: #161dbe;
+  border-color: #fff;
+  color: #fff;
 }
 
 .footer {
